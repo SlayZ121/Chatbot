@@ -1,1 +1,2 @@
 djangochatbot/djangochatbot/settings.py
+djangochatbot/chatbot/secretkey.py
