@@ -3,22 +3,13 @@ from django.shortcuts import render
 from django.http import JsonResponse
 import json
 
-# Import necessary modules and classes
 import google.generativeai as genai
 from .secretkey import secretkey
-
-# Configure GenerativeAI with your API key
-"""
-At the command line, only need to run once to install the package via pip:
-
-$ pip install google-generativeai
-"""
-
 import google.generativeai as genai
 
 genai.configure(api_key=secretkey)
 
-# Set up the model
+
 generation_config = {
   "temperature": 1,
   "top_p": 0.95,
